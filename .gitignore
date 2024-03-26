@@ -1,0 +1,4 @@
+dist
+dotfiles/__pycache__
+dotfiles.egg-info
+venv

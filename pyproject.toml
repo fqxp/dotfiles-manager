@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dotfiles"
+version = "0.1.0"
+description = ""
+authors = ["Frank Ploss <mail@fqxp.de>"]
+readme = "README.md"
+packages = [
+  { include = "dotfiles" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+dotfiles = "dotfiles.cli:cli"
+
+[build-system]
+requires = [ "poetry-core" ]
+build-backend = "poetry.core.masonry.api"
